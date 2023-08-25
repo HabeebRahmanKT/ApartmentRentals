@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    {% load static %}
+
+    <script src="{% static '/view_details/js/scripts.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'view_details/css/styles.css' %}" />
+    <link rel="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:300|Cormorant+Garamond|Montserrat|Tangerine">
+</head>
+
+<body>
+    <section id="header">
+        <h1>Apartment Rentals</h1>
+        <div>
+            <ul id= "navbar">
+                <li><a class="active" id="home">Home</a></li>
+                <li><a class="inactive" id="wishlist">Wishlist</a></li>
+                <li><a class="inactive" id="appointments">Appointments</a></li>
+                <li><a class="inactive" id="list">List</a></li>
+                <li><a class="inactive" id="about">About</a></li>
+            </ul>
+            </div>
+    </section>
+
+    <section id="apartment">
+        <div class="images-section">
+            <img src="https://www.innovationquarter.com/wp-content/uploads/2022/01/apartment-and-lofts.jpg" width="100%"
+                 id="main-image" alt="">
+
+            <div class="small-images-group">
+                <div class="small-image-column">
+                    <img class="small-image" src="https://cdngeneral.rentcafe.com/dmslivecafe/2/3585/LAIQ_pool_umbrella.jpg"
+                         alt="">
+                </div>
+
+                <div class="small-image-column">
+                    <img class="small-image" src="https://photos.zillowstatic.com/fp/622252e6033bfc7b24c4a80c8110155f-p_e.jpg"
+                         width="100%" alt="">
+                </div>
+
+                <div class="small-image-column">
+                    <img class="small-image" src="https://photos.zillowstatic.com/fp/30f94f5daa0a59f9dab898bfa00d3080-p_e.jpg"
+                         width="100%" alt="">
+                </div>
+
+                <div class="small-image-column">
+                    <img class="small-image" src="https://www.trulia.com/pictures/thumbs_4/zillowstatic/fp/ec1ce4eb0403e7a51d4a220d8f7ff1a9-full.jpg"
+                         width="100%" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="apartment-details">
+            <div class="price">
+                <p>Rs.</p>
+                <h3>12000</h3>
+            </div>
+            <h5>Facilities</h5>
+            <div class="facilities-group">
+                <span class="material-symbols-outlined">wifi</span>
+                <span class="material-symbols-outlined">pool</span>
+            </div>
+            <h5>Address</h5>
+            <p>Koyembedu, Chennai, Tamil Nadu</p>
+            <h5>Description</h5>
+            <p id="description">
+                Discover your new urban oasis in this stylish 2-bedroom apartment. Enjoy spacious living with an open-concept layout, flooded with natural light through large windows. Modern kitchen features stainless steel appliances and granite countertops, perfect for whipping up gourmet meals. Unwind on your private balcony with stunning city views. Amenities include a rooftop pool, fitness center, and dedicated parking. Conveniently located near cafes, shops, and public transit. Your ideal urban lifestyle starts here.
+            </p>
+            <h5>Contact</h5>
+            <p>Phone: 99xxxxxxxx</p>
+            <p>Email : xyz@gmail.com</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/home/css/styles.css' %}">
+    <script src="{% static '/home/js/scripts.js' %}"></script>
+    <link rel="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:300|Cormorant+Garamond|Montserrat|Tangerine" />
+</head>
+<body>
+    <section id="header">
+        <h1>Apartment Rentals</h1>
+        <div>
+            <ul id= "navbar">
+                <li><a class="active" id="home">Home</a></li>
+                <li><a class="inactive" id="wishlist">Wishlist</a></li>
+                <li><a class="inactive" id="appointments">Appointments</a></li>
+                <li><a class="inactive" id="list">List</a></li>
+                <li><a class="inactive" id="about">About</a></li>
+            </ul>
+            </div>
+    </section>
+
+    <div id="container">
+        {% for apartment in data %}
+        <div class="product">
+            <img src={{apartment.image_url}}>
+            <div class="details">
+                <p class="price">Rs.{{apartment.price}}</p>
+                <p class="address">{{apartment.address}}</p>
+            </div>
+            <div class="icons">
+                {% for icon in apartment.icon %}
+                    {% if icon != None %}
+                    <span class="material-symbols-outlined">{{icon}}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    
+</body>
+</html>

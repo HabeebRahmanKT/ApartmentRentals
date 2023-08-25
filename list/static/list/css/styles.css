@@ -1,0 +1,56 @@
+h1 {
+    color: black;
+    font-family: 'Tangerine';
+    font-size: 45px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    margin-bottom: 20px;
+    background-color: rgb(209, 225, 236);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Condensed";
+    font-weight: 500;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    font-weight: 1600px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#navbar li:hover,
+#navbar li a.active {
+    color: #08a8a8;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #08a8a8;
+    position: absolute;
+    bottom: -4px;
+    left: 23px;
+}
+
+#navbar li a.inactive {
+    cursor: pointer;
+}
