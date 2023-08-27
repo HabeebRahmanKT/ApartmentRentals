@@ -48,7 +48,11 @@ h1 {
     background-color: #08a8a8;
     position: absolute;
     bottom: -4px;
+<<<<<<< HEAD
     left: 30px;
+=======
+    left: 28px;
+>>>>>>> master
 }
 
 #navbar li a.inactive {
